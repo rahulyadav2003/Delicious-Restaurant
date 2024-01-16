@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+           <nav>
+        <h1>Delicious Restaurant</h1> <!-- Logo -->
+        <div>
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Locations</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+    </header>
+    <div class="slider-container">
+        <div class="slider">
+          <div class="slide"><img src="images/res1.jpg" alt="Slide 1"></div>
+          <div class="slide"><img src="images/res2.jpg" alt="Slide 2"></div>
+          <div class="slide"><img src="images/res3.jpg" alt="Slide 3"></div>
+          <div class="slide"><img src="images/res4.jpg" alt="Slide 4"></div>
+          <div class="slide"><img src="images/res5.jpg" alt="Slide 5"></div>
+        </div>
+        <button id="prev" onclick="prevSlide()">❮</button>
+        <button id="next" onclick="nextSlide()">❯</button>
+      </div>
+      
+
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div>
+            <!-- Category Filter -->
+            <label for="categoryFilter">Filter:</label>
+            <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="veg">Vegetarian</option>
+                <option value="nonveg">Non-Vegetarian</option>
+            </select>
+        </div>
+        <div class="menu">
+            <!-- Replace with actual menu items -->
+            <div class="menuItem veg">
+                <img src="images/panner-tikka.jpeg" alt="Paneer Tikka Masala" class="menuImage">
+                <h3>Paneer Tikka Masala</h3>
+                <p>Delicious paneer cooked in a rich tomato-based gravy.</p>
+                <p>$10.99</p>
+            </div>
+            <div class="menuItem veg">
+                <img src="images/pulao.jpeg" alt="Veg Pulav" class="menuImage">
+                <h3>Veg Pulav</h3>
+                <p>Fragrant and flavorful mixed vegetable pulav.</p>
+                <p>$8.99</p>
+            </div>
+            <div class="menuItem nonveg">
+                <img src="images/chicken_masala.jpeg" alt="Chicken Masala" class="menuImage">
+                <h3>Chicken Masala</h3>
+                <p>Spicy and succulent chicken cooked in a masala gravy.</p>
+                <p>$12.99</p>
+            </div>
+            <div class="menuItem veg">
+                <img src="images/veg_noodles.jpeg" alt="Veg Noodles" class="menuImage">
+                <h3>Veg Noodles</h3>
+                <p>Stir-fried noodles with assorted vegetables.</p>
+                <p>$9.99</p>
+            </div>
+            <div class="menuItem nonveg">
+                <img src="images/non_veg_noodles.jpeg" alt="Non-veg Noodles" class="menuImage">
+                <h3>Non-veg Noodles</h3>
+                <p>Flavorful noodles with a mix of chicken and veggies.</p>
+                <p>$11.99</p>
+            </div>
+            <div class="menuItem veg">
+                <img src="images/friced_rice.jpeg" alt="Fried Rice Veg" class="menuImage">
+                <h3>Fried Rice Veg</h3>
+                <p>Vegetarian fried rice with a perfect blend of flavors.</p>
+                <p>$8.99</p>
+            </div>
+            <div class="menuItem nonveg">
+                <img src="images/friend_rice_non_veg.jpeg" alt="Fried Rice Non-veg" class="menuImage">
+                <h3>Fried Rice Non-veg</h3>
+                <p>Delicious fried rice with a mix of chicken and veggies.</p>
+                <p>$10.99</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h2>Customer Reviews</h2>
+        <!-- Replace with actual reviews -->
+        <div class="review">
+            <h3>John Doe</h3>
+            <p>"Amazing food and great service! Highly recommend."</p>
+        </div>
+        <div class="review">
+            <h3>Jane Smith</h3>
+            <p>"The ambiance is fantastic. Will definitely visit again."</p>
+        </div>
+    </section>
+
+
+    <section id="contact" class="footer">
+        <h2>Contact Us</h2>
+        <p>Our Locations | <a href="#location1">Location 1</a> | <a href="#location2">Location 2</a> | <a href="#">About Us</a> | <a href="#">Privacy Policy</a> | <a href="#">Refund Policy</a></p>
+
+        <div id="location1">
+            <h3>Location 1</h3>
+            <p>123 Main Street, Cityville, Country</p>
+        </div>
+
+        <div id="location2">
+            <h3>Location 2</h3>
+            <p>456 Oak Avenue, Townsville, Country</p>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
