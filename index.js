@@ -22,3 +22,19 @@ function prevSlide() {
 function nextSlide() {
   showSlide(currentIndex + 1);
 }
+
+ // JavaScript for filtering menu items
+        document.getElementById('categoryFilter').addEventListener('change', function() {
+            const selectedCategory = this.value;
+            const menuItems = document.querySelectorAll('.menuItem');
+
+            menuItems.forEach(item => {
+                const itemCategory = item.classList.contains(selectedCategory);
+
+                if (selectedCategory === 'all' || itemCategory) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
